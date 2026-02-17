@@ -37,3 +37,59 @@ a {
 footer {
   padding: 5rem 0;
 }
+
+// Experience accordion cards
+.exp-card {
+  border-left: 3px solid $primary;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  &:hover {
+    border-left-color: lighten($primary, 10%);
+    box-shadow: 0 4px 20px fade-out($primary, .82);
+  }
+}
+
+.exp-toggle {
+  transition: background-color 0.15s ease;
+  &:hover {
+    background-color: fade-out($primary, .93);
+  }
+}
+
+.exp-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid fade-out($primary, .6);
+  color: $primary !important;
+  font-size: 0.65rem;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, background-color 0.15s ease, border-color 0.15s ease;
+  .exp-toggle:hover & {
+    background-color: fade-out($primary, .85);
+    border-color: $primary;
+  }
+  .exp-toggle[aria-expanded="true"] & {
+    transform: rotate(180deg);
+    background-color: fade-out($primary, .8);
+  }
+}
+
+// Publications section with gif background
+#publications {
+  position: relative;
+  background: url('../img/box2.gif') center / cover no-repeat;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: fade-out($black, .12);
+    z-index: 0;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
