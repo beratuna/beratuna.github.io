@@ -28,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Tuna</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">masterpiece</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -37,15 +37,18 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experiences">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experiences">Experiences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#social-activities">Social Activities</a>
+            <a class="nav-link js-scroll-trigger" href="#social-activities">Social</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Resume</a>
@@ -54,8 +57,6 @@
       </div>
     </div>
   </nav>
-  
-  
 
   <!-- Header -->
   <header class="masthead">
@@ -74,127 +75,188 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">About</h2>
-          <p class="text-white-50">I am a Master’s Student in Information Systems in Deep Learning & Computer Vision Lab. Currently, I have been studying Computer Vision in a Tubitak 1001 granted research project in <a href="http://www.metu.edu.tr/">Metu</a>. Specifically, I have been focusing on improving Adversarial Examples.
-            Besides, I love singing and I am a chorist at polyphonic choir <a href="https://www.jazzberrytunes.com/">Jazzberry Tunes</a>.</p>
+          <p class="text-white-50">
+            Lead ML Engineer &amp; Founding Engineer at <a href="https://synnada.ai/">Synnada</a>, building ML compilers, deploying agentic AI systems, and leading a team of engineers.
+            M.Sc. in Information Systems (Deep Learning) from <a href="http://www.metu.edu.tr/">METU</a>.
+            Founding member of the polyphonic choir <a href="https://www.instagram.com/pulse_the_choir/">Pulse</a> and active chorist.
+          </p>
         </div>
-      </div>     
+      </div>
     </div>
   </section>
-  
-    <!-- Education Section -->
-  <section id="education" class="education-section text-center">
+
+  <!-- Experiences Section -->
+  <section id="experiences" class="experiences-section py-5" style="background-color: #d8d8d8;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <h2 class="text-black mb-4 mt-3">Work Experience</h2>
+        </div>
+      </div>
+
+      <!-- Synnada -->
+      <div class="row justify-content-center no-gutters mb-4">
+        <div class="col-lg-10">
+          <div class="content-pad bg-black" style="border-radius: 12px;">
+            <div class="d-flex justify-content-between align-items-start flex-wrap">
+              <h4 class="text-white mb-1">Synnada</h4>
+              <span class="text-white-50">Jan 2022 &mdash; Present</span>
+            </div>
+            <p class="text-white-50 mb-2"><em>Lead Machine Learning Engineer &amp; Founding Engineer &mdash; Austin, TX (Full Time, Remote)</em></p>
+            <ul class="text-white-50">
+              <li>Building an ML compiler from scratch (<a href="https://github.com/beratuna/mithril">Mithril</a>, open source) with modular model composition, graph-level optimizations, and language &amp; framework agnostic code generation.</li>
+              <li>Implementing e2e compilable SOTA models including Flux and WAN.</li>
+              <li>Developing a robust optimizer that eliminates the need for hyper-parameter tuning and post-training quantization.</li>
+              <li>Building &amp; deploying e2e agentic workflows (e.g. <a href="https://x.com/stokcubot">Multi-Agent Trading Bot: stokcubot</a>).</li>
+              <li>Leading a team of 4&ndash;5 engineers since September 2023.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- METU -->
+      <div class="row justify-content-center no-gutters mb-4">
+        <div class="col-lg-10">
+          <div class="content-pad bg-black" style="border-radius: 12px;">
+            <div class="d-flex justify-content-between align-items-start flex-wrap">
+              <h4 class="text-white mb-1">METU &mdash; Deep Learning &amp; Computer Vision Lab</h4>
+              <span class="text-white-50">Sep 2020 &mdash; Dec 2021</span>
+            </div>
+            <p class="text-white-50 mb-2"><em>Graduate Research Assistant &mdash; Ankara, Turkey (Full Time, On-site)</em></p>
+            <ul class="text-white-50">
+              <li>Developed novel methods to improve perceptual quality of adversarial examples using perceptual distance minimization and variance-based weighting schemes, achieving quantitative improvements on NIPS2017 datasets.</li>
+              <li>Designed training algorithms for universal adversarial perturbations with alternating loss functions, achieving 95% fooling rate.</li>
+              <li>Created imperceptible adversarial examples via spatial chroma-shift transformations in color channels.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monty Labs -->
+      <div class="row justify-content-center no-gutters mb-4">
+        <div class="col-lg-10">
+          <div class="content-pad bg-black" style="border-radius: 12px;">
+            <div class="d-flex justify-content-between align-items-start flex-wrap">
+              <h4 class="text-white mb-1">Monty Labs</h4>
+              <span class="text-white-50">Jun 2019 &mdash; Jul 2020</span>
+            </div>
+            <p class="text-white-50 mb-2"><em>Full Stack Developer &mdash; Ankara, Turkey (Full Time, On-site)</em></p>
+            <ul class="text-white-50">
+              <li>Developed "Trackr", an Active Tracking System utilizing Beacon Technology for real-time indoor employee monitoring and analytics, enabling managers to locate personnel across venues and analyze performance metrics.</li>
+              <li>Built web applications providing real-time data visualization and reporting dashboards for decision-making, reducing overtime costs.</li>
+              <li>Implemented IoT-based B2B software solutions integrating sensor networks with analytics platforms for venue management.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Internships -->
+      <div class="row justify-content-center mt-2">
+        <div class="col-lg-10 text-center">
+          <h2 class="text-black mb-3">Research Internships</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center no-gutters mb-2">
+        <div class="col-lg-10">
+          <div class="content-pad bg-black mb-0" style="border-radius: 12px;">
+            <ul class="text-white-50 mb-0">
+              <li class="mb-3">
+                <strong class="text-white">Bilkent University</strong> <span class="text-white-50">&mdash; Oct 2018 &ndash; Aug 2019, Ankara, Turkey</span><br>
+                Research Assistant: Conducted research on predictive processing with Dr. Burcu &Uuml;rgen.
+              </li>
+              <li class="mb-3">
+                <strong class="text-white">Universiteit Gent &mdash; Verguts Lab</strong> <span class="text-white-50">&mdash; Jul 2018 &ndash; Sep 2018, Ghent, Belgium</span><br>
+                Research Intern: Conducted multi-step decision-making project (computational modelling, parameter optimization).
+              </li>
+              <li>
+                <strong class="text-white">Bogazici University &mdash; Neuro-signal Lab</strong> <span class="text-white-50">&mdash; Jul 2017 &ndash; Sep 2017, Istanbul, Turkey</span><br>
+                Research Intern: Conducted research under Prof. Dr. Ahmet Ademoglu's supervision.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="bg-black">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center" style="padding-top: 3rem;">
+          <h2 class="text-white mb-4">Publications &amp; Talks</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="content-pad" style="padding-bottom: 3rem;">
+            <ul class="text-white-50" style="list-style: none; padding-left: 0;">
+              <li class="mb-3 d-flex justify-content-between align-items-baseline">
+                <span class="pr-3"><strong class="text-white">ACM Hour of AI series (Talk): Explore Agent AI Systems &mdash; Bilkent University</strong></span>
+                <span class="text-white-50 text-nowrap flex-shrink-0">2025</span>
+              </li>
+              <li class="mb-3 d-flex justify-content-between align-items-baseline">
+                <span class="pr-3"><strong class="text-white">AAAI-22:</strong> <a href="https://openreview.net/forum?id=rq2hMS4OaUX">Improving Perceptual Quality of Adversarial Images Using Perceptual Distance Minimization</a></span>
+                <span class="text-white-50 text-nowrap flex-shrink-0">2022</span>
+              </li>
+              <li class="mb-3 d-flex justify-content-between align-items-baseline">
+                <span class="pr-3"><strong class="text-white">AAAI-22:</strong> <a href="https://openreview.net/forum?id=gVe36H8OrHW">Training Universal Adversarial Perturbations with Alternating Loss Functions</a></span>
+                <span class="text-white-50 text-nowrap flex-shrink-0">2022</span>
+              </li>
+              <li class="mb-3 d-flex justify-content-between align-items-baseline">
+                <span class="pr-3"><strong class="text-white">ACM Multimedia 2021:</strong> <a href="https://dl.acm.org/doi/abs/10.1145/3475724.3483604">Imperceptible Adversarial Examples by Spatial Chroma-Shift</a></span>
+                <span class="text-white-50 text-nowrap flex-shrink-0">2021</span>
+              </li>
+              <li class="mb-3 d-flex justify-content-between align-items-baseline">
+                <span class="pr-3"><a href="https://www.medrxiv.org/content/10.1101/2020.05.04.20090779v1">Rapid X-Ray Chest Radiograph and Mortality Rate Evaluation With AI For COVID-19</a></span>
+                <span class="text-white-50 text-nowrap flex-shrink-0">2020</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section text-center" style="background-color: #d8d8d8;">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto" style="margin: 2em">
+        <div class="col-lg-8 mx-auto" style="margin: 2em auto">
           <h2 class="text-black mb-4">Education</h2>
-          <h5 class="text-black mb-2">Middle East Technical University</h5>
-          <p class="text-black-50">Information Systems (Data Science) M.Sc. (Sept. 2019 - Present)</p>
-          <h5 class="text-black mb-2">Bilkent University</h5>
-          <p class="text-black-50">Computer Science B.Sc. (Sept. 2014 - June 2019)</p>       
-          <p</p>
-          <p</p>
+          <h5 class="text-black mb-1">Middle East Technical University</h5>
+          <p class="text-black-50 mb-0">M.Sc. Information Systems (Deep Learning) &mdash; Sep 2019 &ndash; Dec 2022, Ankara, Turkey</p>
+          <p class="text-black-50 mb-3">
+            Thesis: <a href="https://open.metu.edu.tr/handle/11511/101257"><em>Attack Independent Perceptual Improvement of Adversarial Examples</em></a><br>
+            TUBITAK 1001 Scholarship
+          </p>
+          <h5 class="text-black mb-1">Bilkent University</h5>
+          <p class="text-black-50">B.Sc. Computer Science &mdash; Sep 2014 &ndash; Jun 2019, Ankara, Turkey<br>Comprehensive Scholarship</p>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- Experiences Section -->
-  <section id="experiences" class="experiences-section bg-light">
-    <div class="container">
 
-      <!-- Featured Project Row -->
-      <div class="row ">
-        <div class="col-lg-6">
-          <!-- <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt=""> -->
-          <div class="content-pad featured-text text-top text-lg-left">
-            <h4>Publications</h4>
-            <ul class="a">
-              <li class="text-black-50 mb-0">
-                <a href="https://arxiv.org/abs/2108.02502">Imperceptible Adversarial Examples by Spatial Chroma-Shift</a></p></li>
-              <li class="text-black-50 mb-0">
-                <a href="https://www.medrxiv.org/content/10.1101/2020.05.04.20090779v1">Rapid X-Ray Chest Radiograph and Mortality Rate Evaluation With AI For COVID-19</a></p></li>
-            </ul>
-            </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="content-pad featured-text text-center text-lg-left">
-              <h4>Job Experience</h4>
-            <ul class="a">
-              <li class="text-black-50 mb-0">Research Assistant, improving Adversarial Examples on Deep Neural Networks at 
-                <a href="http://www.metu.edu.tr/">Metu</a>(Sept. 2020 - Present)</p></li>
-              <li class="text-black-50 mb-0">Data Analyst, working on Productivity Analytics, Data Visualization and Reporting at  
-                <a href="https://www.montylabs.com/trackr.html">Monty Labs </a> (Dec. 2019 - July 2020)</p></li>
-              <li class="text-black-50 mb-0">Full-Stack Developer, developing Real-Time Indoor Tracking System for Businesses at  
-                <a href="https://www.montylabs.com/trackr.html">Monty Labs </a> (June 2019 - Nov. 2019)</p></li>
-            </ul>
-            </div>
-        </div>
-      </div>
-
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/gent.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="content-pad project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Internships & Research Assistantship</h4>
-                <ul class="a">
-                  <li class="text-white-50">Research Intern, Conducting a multistep decision-making project using computational modalling and parameter optimization techniques at Ghent University (July 2018 - Sept. 2018)</p></li>
-                  <li class="text-white-50">Neurosignal Analysis Lab Bogazici University Biomedical Engineering Department (July 2017 - Aug. 2017)</p></li>
-                  <li class="text-white-50">Enterprise Project Development (June 2017 - July 2017)</p></li>
-                  <li class="text-white-50">Undergraduate Research Assistant on top-down efects of biological motion perception at 
-                    <a href="http://umram.bilkent.edu.tr/index.php/teams/berat-tuna-karli/"> UMRAM</a> (June 2017 - June 2019).</p></p></li>
-                </ul>    
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Two Row -->
-      <!-- <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/the_office_research_scientist.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="content-pad project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Undergraduate Research Assistant</h4>
-                <p class="mb-0 text-white-50">Top-down efects of Biological Motion Perception at 
-                <a href="http://umram.bilkent.edu.tr/index.php/teams/berat-tuna-karli/"> UMRAM</a> (Oct. 2018 - Present).</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-    </div>
-  </section>
-
-  
-  
   <!-- Social Activities Section -->
-  <section id="social-activities" class="social-activities-section text-center bg-dark">
+  <section id="social-activities" class="social-activities-section text-center bg-black">
     <div class="container">
       <div class="row">
         <div class="content-pad col-lg-8 mx-auto">
           <h2 class="text-white mb-4">Social Activities</h2>
-          <p class="text-white-50">Participating Jazzbery Tunes (Dec. 2018 - Present).</p>
-          <p class="text-white-50">Participating TRT Polyphonic Choir (Sept. 2014 - Dec. 2019)</p>
-          <p class="text-white-50">Les Choralies Festival in France in 2019</p>
-          <p class="text-white-50">Erasmus+ Resolve: Gender Equity in Tbilisi in 2021</p>
+          <p class="text-white-50">Founding member of <a href="https://www.instagram.com/pulse_the_choir/" class="text-white">Pulse</a>, a polyphonic choir (2023 &ndash; Present)</p>
+          <p class="text-white-50">Chorist in <a href="https://www.jazzberrytunes.com/" class="text-white">Jazzberry Tunes (JBT)</a> (2018 &ndash; 2023)</p>
+          <p class="text-white-50">Chorist in TRT Polyphonic Choir (2014 &ndash; 2019)</p>
+          <p class="text-white-50">Chorist in SFK (2023 &ndash; Present)</p>
+          <p class="text-white-50">Les Choralies Festival &mdash; France, 2019</p>
+          <p class="text-white-50">Erasmus+ Resolve: Gender Equity &mdash; Tbilisi, 2021</p>
         </div>
       </div>
       <img src="img/piano.jpeg" class="img-fluid" alt="">
     </div>
   </section>
-  
+
   <!-- Signup Section -->
   <section id="signup" class="signup-section">
     <div class="container">
@@ -203,7 +265,7 @@
 
           <i class="far fa-file-pdf fa-2x mb-2 text-white"></i>
           <h2 class="text-white mb-5">Resume</h2>
-          
+
           <a href="resume.pdf" target="_blank" class="btn btn-primary">CV</a>
         </div>
       </div>
@@ -217,7 +279,7 @@
       <div class="row">
 
         <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
+          <div class="card py-4 h-100" style="background-color: #d8d8d8;">
             <div class="card-body text-center">
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
@@ -228,25 +290,25 @@
         </div>
 
         <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
+          <div class="card py-4 h-100" style="background-color: #d8d8d8;">
             <div class="card-body text-center">
               <i class="fas fa-envelope text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">k.beratuna@gmail.com</a>
+                <a href="mailto:k.beratuna@gmail.com">k.beratuna@gmail.com</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
+          <div class="card py-4 h-100" style="background-color: #d8d8d8;">
             <div class="card-body text-center">
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+90 (506) 348-2084</div>
+              <div class="small text-black-50">+90 (506) 348 20 84</div>
             </div>
           </div>
         </div>
@@ -270,7 +332,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Berat Tuna KARLI 2021
+      Copyright &copy; Berat Tuna KARLI 2026
     </div>
   </footer>
 

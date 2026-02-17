@@ -6,7 +6,7 @@
 
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  background-color: #d8d8d8;
 }
 
 #mainNav .navbar-toggler {
@@ -24,6 +24,7 @@
   color: #161616;
   font-weight: 700;
   padding: .9rem 0;
+  font-size: 0.85rem;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -61,7 +62,7 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: #d8d8d8;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
@@ -278,6 +279,7 @@
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
+  background-color: #d8d8d8;
 }
 
 a {
@@ -291,6 +293,10 @@ a:focus, a:hover {
 
 .bg-black {
   background-color: #161616 !important;
+}
+
+.bg-black .text-white-50 {
+  color: rgba(255, 255, 255, 0.72) !important;
 }
 
 .bg-gray {
