@@ -20,3 +20,52 @@
     }
   }
 }
+
+.projects-showcase-section {
+  padding: 6rem 0;
+  background-color: #d8d8d8;
+}
+
+.quest-card {
+  padding: 1.75rem;
+  border-radius: 14px;
+  background: $black;
+  border: 1px solid fade-out($primary, .78);
+  box-shadow: 0 12px 28px rgba(22, 22, 22, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: fade-out($primary, .3);
+    box-shadow: 0 18px 36px rgba(22, 22, 22, 0.14);
+  }
+
+  h4 {
+    font-family: 'Varela Round';
+    font-size: 1.05rem;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: lighten($primary, 10%);
+    }
+  }
+}
+
+.quest-label {
+  color: $primary;
+  font-family: 'Varela Round';
+  font-size: 0.72rem;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+}
+
+.quest-meta {
+  color: rgba(255, 255, 255, 0.58);
+  display: block;
+  font-size: 0.9rem;
+}
